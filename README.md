@@ -7,8 +7,6 @@ The issue arises when switching from relative path imports to `mod.ts` imports o
 
 ## Repository Structure
 
-(Simplified)
-
 ```
 .
 ├── another-project/
@@ -31,7 +29,7 @@ A simple Deno project just containing:
 
 Contains two Supabase edge functions demonstrating the bug:
 
-#### `import-mod-ts/`: Imports `another-project` via mod.ts
+#### `import-mod-ts/`: Imports `another-project` via `mod.ts`
 
 ```
 "imports": {
