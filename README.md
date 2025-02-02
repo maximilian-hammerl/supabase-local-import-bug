@@ -1,9 +1,9 @@
 # Supabase Edge Function Bug: Imports Side Effects
 
-## Overview
-
 This repository demonstrates a potential bug in Supabase edge functions related to module imports.
 The issue arises when switching from relative path imports to `mod.ts` imports of another project, causing unexpected failures when edge functions are either refactored to all use `mod.ts` imports or removed.
+
+Bug report: https://github.com/supabase/cli/issues/3093
 
 ## Repository Structure
 
