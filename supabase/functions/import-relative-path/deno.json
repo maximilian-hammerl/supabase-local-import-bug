@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "another-project/": "../../../another-project/"
+  },
+  "tasks": {
+    "format": "deno fmt",
+    "format-check": "deno fmt --check",
+    "lint": "deno lint --fix",
+    "lint-check": "deno lint",
+    "type-check": "deno check **/*.ts",
+    "validate": "deno task format && deno task lint && deno task type-check",
+    "validate-check": "deno task format-check && deno task lint-check && deno task type-check"
+  }
+}
