@@ -1,2 +1,1 @@
-export * from "./a.ts";
-export * from "./b.ts";
+export * from "./file_a.ts";
