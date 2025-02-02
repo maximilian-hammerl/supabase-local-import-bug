@@ -1,3 +1,5 @@
+import { printStuff } from "./c.ts";
+
 export function functionB(someInput: string): void {
-  console.info(`I am function B: ${someInput}`);
+  printStuff(`I am function B: ${someInput}`);
 }
