@@ -14,3 +14,25 @@ jobs:
           version: latest
       - run: supabase start
       - run: ./test-edge-functions.sh
+
+  only-mod-ts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: rm -r supabase/functions/import-relative-path
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - run: supabase start
+      - run: ./test-edge-functions.sh
+
+  only-relative-import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: rm -r supabase/functions/import-mod-ts
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - run: supabase start
+      - run: ./test-edge-functions.sh
